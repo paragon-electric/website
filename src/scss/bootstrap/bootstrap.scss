@@ -13,8 +13,8 @@
 @import "bootstrap/scss/functions";
 
 // 2. Include any default variable overrides here
-$primary:       v.$purple-dark;
-$secondary:     v.$pink;
+$primary:       v.$primary;
+$secondary:     v.$secondary;
 
 // ACCORDION OVERRIDES
 $accordion-padding-y:                     1.5rem;// LEAVE THE PADDING-Y TO DEFAULT

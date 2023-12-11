@@ -8,11 +8,11 @@
     margin: 0;
     border: 0.1rem solid rgba(v.$white, 0.6);
     background-color: v.$white;
-    display: block;
+    display: inline-block;
 
     span {
         position: absolute;
-        background-color: v.$primary;
+        background-color: v.$secondary;
         width: 2.5rem;
         height: 2.5rem;
         top: 50%;

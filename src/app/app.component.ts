@@ -11,11 +11,13 @@ import { PortfolioComponent } from "./components/portfolio/portfolio.component";
 import { ContactComponent } from "./components/contact/contact.component";
 import { FooterComponent } from "./components/footer/footer.component";
 import { BackToTopComponent } from "./components/back-to-top/back-to-top.component";
+import { AboutComponent } from "./components/about/about.component";
+import { ParagonComponent } from "./components/paragon/paragon.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ CommonModule, RouterOutlet, NavbarComponent, IntroComponent, CompaniesComponent, ServicesComponent, TestimonialsComponent, FaqComponent, PortfolioComponent, ContactComponent, FooterComponent, BackToTopComponent ],
+  imports: [ CommonModule, RouterOutlet, NavbarComponent, IntroComponent, CompaniesComponent, ServicesComponent, TestimonialsComponent, FaqComponent, PortfolioComponent, ContactComponent, FooterComponent, BackToTopComponent, AboutComponent, ParagonComponent ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

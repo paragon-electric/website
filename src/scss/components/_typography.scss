@@ -1,5 +1,10 @@
 @use '../variables' as v;
 @use '../mixins' as m;
+@use '../components/mixins' as cm;
+
+.secondary-text {
+  color: v.$secondary;
+}
 
 .display-2 {
     margin-bottom: 1rem;
@@ -56,7 +61,7 @@
         font-weight: 600;
         font-family: 'Poppins', sans-serif;
         display: inline-block;
-        background-image: linear-gradient(to right, v.$primary, v.$secondary);
+        background-image: linear-gradient(to right, v.$primary, v.$tertiary);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -82,5 +87,5 @@
 
 // GRADIENT BG
 .gradient  {
-    background: linear-gradient(to right, rgba(v.$primary, 0.95), rgba(v.$secondary, 0.95));
+    @include cm.gradient;
 }
