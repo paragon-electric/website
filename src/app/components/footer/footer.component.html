@@ -12,12 +12,12 @@
           </svg>
         </div>
         <div class="contact-box__info">
-          <a href="#" class="contact-box__info--title">{{ PHONE_NUMBER }}</a>
+          <a href="tel:16132653330" class="contact-box__info--title">{{ PHONE_NUMBER }}</a>
           <p class="contact-box__info--subtitle">  Mon-Fri 9am-6pm</p>
         </div>
       </div>
       <!-- CONTENT FOR EMAIL  -->
-      <div class="col-md-7 contact-box pt-1 d-md-block d-lg-flex d-flex">
+      <div class="col-md-7 contact-box pt-1 d-md-block d-lg-flex d-flex justify-content-md-end">
         <div class="contact-box__icon">
           <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail-opened" viewBox="0 0 24 24" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -28,7 +28,7 @@
           </svg>
         </div>
         <div class="contact-box__info">
-          <a href="#" class="contact-box__info--title">{{ EMAIL }}</a>
+          <a [href]="'mailto:'+ EMAIL" class="contact-box__info--title">{{ EMAIL }}</a>
           <p class="contact-box__info--subtitle">Online support</p>
         </div>
       </div>
@@ -37,7 +37,7 @@
   </div>
 
   <!-- START THE SOCIAL MEDIA CONTENT  -->
-  <div class="footer-sm" style="background-color: #212121;">
+  <div class="footer-sm d-none" style="background-color: #212121;">
     <div class="container">
       <div class="row py-4 text-center text-white">
         <div class="col-lg-5 col-md-6 mb-4 mb-md-0">
